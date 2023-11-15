@@ -6,10 +6,9 @@ Rails.application.routes.draw do
       post 'transfer', to: 'transactions#transfer'
       post 'deposit', to: 'transactions#deposit'
       post 'withdraw', to: 'transactions#withdraw'
+      get 'stocks/price', to: 'stocks#price'
+      get 'stocks/prices', to: 'stocks#price'
+      get 'stocks/all', to: 'stocks#all'
     end
   end
-
-  get 'stocks/price', to: 'stocks#price'
-  get 'stocks/prices', to: 'stocks#price'
-  get 'stocks/all', to: 'stocks#all'
 end
